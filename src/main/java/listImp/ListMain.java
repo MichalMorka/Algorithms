@@ -11,9 +11,12 @@ public class ListMain {
             list.add(rand.nextInt(101)); // generujemy losowe liczby do listy
 
         ListUtilities.display(list); // wyswietlam liste
-        list.add(11,2);
+//        list.add(11,2);
+//        ListUtilities.display(list);
+//        list.remove(9);
+//        list.swap(2,5);
+        ListUtilities.insertSort(list);
         ListUtilities.display(list);
-        list.remove(9);
-        ListUtilities.display(list);
+
     }
 }

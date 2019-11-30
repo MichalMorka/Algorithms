@@ -93,6 +93,18 @@ public class LinkedList<T> implements  IList<T> {
 
 
     }
+
+    @Override
+    public void swap(int index1, int index2) {
+        checkGetBounds(index1);
+        checkGetBounds(index2);
+        T tmp = get(index1);
+        set(get(index2), index1);
+        set(tmp,index1);
+
+
+    }
+
     private void checkInsertBounds(int index) {
         if (index < 0 || index > size)
             throw new IndexOutOfBoundsException();
