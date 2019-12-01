@@ -9,6 +9,7 @@ public class Node<T> {
     }
 
     public Node(Node<T> nextNode) {
+
         this.nextNode = nextNode;
     }
 

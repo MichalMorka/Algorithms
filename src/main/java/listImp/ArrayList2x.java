@@ -1,6 +1,7 @@
 package listImp;
 
 public class ArrayList2x<T> implements IList<T>{
+
     private T[] array;
     private final int lengthMultiplier = 2;
     private int size = 0;
@@ -27,7 +28,8 @@ public class ArrayList2x<T> implements IList<T>{
     public void add(T value) {
         if (array.length == size)
             extendTable();
-        array[size++] = value;
+        array[size] = value;
+        size++;
     }
 
     @Override

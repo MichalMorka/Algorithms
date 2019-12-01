@@ -2,20 +2,19 @@ package listImp;
 
 public class LinkedList<T> implements  IList<T> {
 
-    private
-    int size = 0 ;
-    private T value;
     private Node<T> firstNode;
+    private int size;
+    private T value;
+
 
     @Override
     public boolean isEmpty() {
-
         return size == 0;
     }
 
     @Override
     public int size() {
-        return size();
+        return size;
     }
 
     @Override
@@ -32,8 +31,6 @@ public class LinkedList<T> implements  IList<T> {
         tmpNode.setNextNode(new Node<>(value));
         size++;
         }
-
-
 
     @Override
     public void add(T value, int index) {
